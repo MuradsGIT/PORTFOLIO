@@ -1,5 +1,4 @@
 import React from "react";
-import WorkImg from "../assets/workImg.jpeg";
 import pinterest from "../assets/pinterest.png";
 
 const Work = () => {
