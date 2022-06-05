@@ -1,5 +1,7 @@
 import React from "react";
 import pinterest from "../assets/pinterest.png";
+import crypto from "../assets/crypto.png";
+import quotestagram from "../assets/quotestagram.png";
 
 const Work = () => {
   return (
@@ -42,7 +44,55 @@ const Work = () => {
           </div>
           {/* Project 2*/}
 
-        
+          <div
+            style={{ backgroundImage: `url(${crypto})` }}
+            className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
+          >
+            {/* Hover Effects */}
+            <div className="opacity-0 group-hover:opacity-100">
+              <span className="text-2xl font-bold text-white tracking-wider">
+                React Application
+              </span>
+              <div className="pt-8 text-center">
+                <a href="https://muradscrypto.netlify.app//"   target="_blank">
+                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
+                    Demo
+                  </button>
+                </a>
+                <a href="/">
+                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
+                    Code
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        {/* Project 3*/}
+
+
+        <div
+            style={{ backgroundImage: `url(${quotestagram})` }}
+            className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
+          >
+            {/* Hover Effects */}
+            <div className="opacity-0 group-hover:opacity-100">
+              <span className="text-2xl font-bold text-white tracking-wider">
+                MERN Stack Application
+              </span>
+              <div className="pt-8 text-center">
+                <a href="https://muradsquote.netlify.app/"   target="_blank">
+                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
+                    Demo
+                  </button>
+                </a>
+                <a href="/">
+                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
+                    Code
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
