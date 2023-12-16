@@ -4,6 +4,11 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-scroll";
 const Navbar = () => {
   const [nav, setNav] = useState(false);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
+  const handleDropdownToggle = () => {
+    setIsDropdownOpen(!isDropdownOpen);
+  };
   const handleClick = (e) => {
     setNav(!nav);
   };
@@ -34,15 +39,11 @@ const Navbar = () => {
         <li>
           {" "}
           <Link to="work" smooth={true} duration={500}>
-            Work
+            Projects
           </Link>
         </li>
-        <li>
-          {" "}
-          <Link to="contact" smooth={true} duration={500}>
-            Contact
-          </Link>
-        </li>
+        
+     
       </ul>
 
       {/*Hamburger*/}
@@ -69,10 +70,12 @@ const Navbar = () => {
         <li className="py-6 text-4xl"> <Link onClick={handleClick}  to="skills" smooth={true} duration={500}>
             Skills
           </Link></li>
-        <li className="py-6 text-4xl"> <Link onClick={handleClick}  to="contact" smooth={true} duration={500}>
-            Contact
+        <li className="py-6 text-4xl"> <Link onClick={handleClick}  to="work" smooth={true} duration={500}>
+            Projects
           </Link></li>
+       
       </ul>
+      
 
       {/*Social icons */}
     </div>

@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
+
 
 const About = () => {
+
+  
   return (
     <div name="about" className="w-full h-screen bg-[#0a192f] text-gray-300">
       <div className="flex flex-col justify-center items-center w-full h-full">
@@ -13,15 +16,16 @@ const About = () => {
           <div></div>
         </div>
 
-        <div className="max-w-[1000px] w-full   grid sm:grid-cols-2 gap-8 px-4">
+        <div className="max-w-[1000px] w-full   grid sm:grid-cols-2 gap-8 px-4 ">
           <div className="sm:text-right font-bold text-4xl">
-            <p>Hi. I'm Murad, nice to meet you. Go ahead, take a look around</p>
+            <p>Go ahead, take a look around</p>
           </div>
-          <div>
+          <div className="">
             <p>
-              Self-taught programmer with a knack for coming up with elegant
-              solutions in the shortest period possible. Looking to use my
-              programming skills to assist others and build my dream projects.
+              I've build my skills through self-learning and hands-on projects.
+              Now, I am eager to transition into my first professional role,
+              with excitement to apply my knowledge to real-world challenges. I
+              am seeking opportunities to contribute, learn, and grow within a team.
             </p>
           </div>
         </div>
